@@ -1,34 +1,14 @@
-import React, {Component} from 'react';
+import React from 'react';
 import UserItem from "./UserItem";
+import Spinner from'../layout/Spinner';
 
-class Users extends Component {
-    state = {
-        users : [
-            {
-                id : 'id',
-                login : 'mojombo',
-                avatar_url : 'https://www.gravatar.com/avatar/bd72ad672b055a7d59cfb1c30d1c724f?s=328&d=identicon&r=PG',
-                html_url : 'https://stackoverflow.com/users/1439168/miguel-mota'
-            },
-            {
-                id : 'idds',
-                login : 'kjrkr',
-                avatar_url : 'https://www.gravatar.com/avatar/bd72ad672b055a7d59cfb1c30d1c724f?s=328&d=identicon&r=PG',
-                html_url : 'https://stackoverflow.com/users/1439168/miguel-mota'
-            },
-            {
-                id : 'isdd',
-                login : 'gjjerdj',
-                avatar_url : 'https://www.gravatar.com/avatar/bd72ad672b055a7d59cfb1c30d1c724f?s=328&d=identicon&r=PG',
-                html_url : 'https://stackoverflow.com/users/1439168/miguel-mota'
-            }
-        ]
-    }
-
-    render() {
+const Users = ({ users, loading }) => {
+    if(loading) {
+        return <Spinner />
+    } else {
         return (
             <div style={userStyle}>
-                {this.state.users.map(user => (
+                {users.map(user => (
                     <UserItem key={user.id} user={user}/>
                 ))}
             </div>
