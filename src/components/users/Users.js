@@ -11,13 +11,13 @@ class Users extends Component {
                 html_url : 'https://stackoverflow.com/users/1439168/miguel-mota'
             },
             {
-                id : 'id',
+                id : 'idds',
                 login : 'kjrkr',
                 avatar_url : 'https://www.gravatar.com/avatar/bd72ad672b055a7d59cfb1c30d1c724f?s=328&d=identicon&r=PG',
                 html_url : 'https://stackoverflow.com/users/1439168/miguel-mota'
             },
             {
-                id : 'id',
+                id : 'isdd',
                 login : 'gjjerdj',
                 avatar_url : 'https://www.gravatar.com/avatar/bd72ad672b055a7d59cfb1c30d1c724f?s=328&d=identicon&r=PG',
                 html_url : 'https://stackoverflow.com/users/1439168/miguel-mota'
