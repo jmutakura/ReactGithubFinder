@@ -7,11 +7,13 @@ export class Navbar extends Component {
         icon: 'fab fa-github'
     }
 
+
     // make sure your props are the correct data types
     static propTypes = {
         title: PropTypes.string.isRequired,
         icon: PropTypes.string.isRequired
     }
+
 
     render() {
         return (
@@ -23,5 +25,6 @@ export class Navbar extends Component {
         );
     }
 }
+
 
 export default Navbar;
